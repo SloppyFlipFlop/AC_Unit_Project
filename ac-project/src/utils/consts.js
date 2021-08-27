@@ -1,40 +1,24 @@
-import { FaFacebook, FaTwitter, FaLinkedin, FaBehance } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram} from "react-icons/fa";
 import React from "react";
-import { Home, About, Products, Error, Cart } from "../Pages";
+import { Home, Error} from "../Pages";
 import Admin from "../Pages/Admin"
 export const links = [
+  
   {
-    id: 2,
-    url: "/about",
-    text: "About",
-    page: <About />,
-  },
-  {
-    id: 3,
-    url: "/products",
-    text: "products",
-    page: <Products />,
-  },
-  {
-    id: 4,
-    url: "/cart",
-    text: "cart",
-    page: <Cart />,
-  },
-  {
-    id: 7,
-    url: "/admin",
-    text: "admin",
-    page: <Admin />,
-  },
-  {
-    id: 5,
+    id: 1,
     url: "/",
     text: "Home",
     page: <Home />,
   },
   {
-    id: 6,
+    id: 2,
+    url: "/admin",
+    text: "admin",
+    page: <Admin />,
+  },
+  
+  {
+    id: 3,
     url: "*",
     text: "Error",
     page: <Error />,
@@ -60,6 +44,6 @@ export const socials = [
   {
     id: 4,
     url: "https://www.behance.com",
-    icon: <FaBehance />,
+    icon: <FaInstagram />
   },
 ];
