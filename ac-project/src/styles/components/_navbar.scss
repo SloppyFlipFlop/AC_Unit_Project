@@ -3,12 +3,27 @@
 @use '../util/mixins'as *;
 
 .navbar {
-  background: $white;
+  background: linear-gradient(to right, $secondary-5, $secondary-6);
+  
+  width: 20vw;
+  height: 100vh;
   box-shadow: $light-shadow;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   .nav-center {
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
     .nav-header {
       @include flex-space;
       padding: 1rem;
+      height: 100px;
+      width: 100px;
     }
     .nav-toggle {
       font-size: 1.5rem;
@@ -23,6 +38,8 @@
       }
     }
     .links-container {
+      display: flex;
+      flex-direction: column;
       height: 0;
       overflow: hidden;
       &.show {
@@ -30,39 +47,43 @@
       }
     }
 
-    .links li {
-      color: $grey-2;
-      font-size: 1rem;
-      text-transform: capitalize;
-      letter-spacing: $spacing;
-      display: block;
-      padding: 0.5rem 1rem;
-      transition: $transition;
-      position: relative;
-      &::after {
-        @include pseudo;
-        height: 3px;
-        background: $primary-4;
-        position: absolute;
-        bottom: 0;
-        width: 0;
+    .links {
+      flex-direction: column;
+      li {
+        color: $font-color;
+        font-size: 1rem;
+        text-transform: capitalize;
+        letter-spacing: $spacing;
+        display: block;
+        margin: 0.5rem 0.5rem;
         transition: $transition;
-      }
-      &:hover {
-        background: $primary-4;
-        color: $primary-4;
-        padding-left: 1.5rem;
+        position: relative;
         &::after {
-          width: 100%;
+          @include pseudo;
+          height: 3px;
+          background: $primary-4;
+          position: absolute;
+          bottom: 0;
+          width: 0;
+          transition: $transition;
         }
-      }
-      a {
-        color: $seconday-4;
+        &:hover {
+          background: $secondary-7;
+          color: $secondary-7;
+          padding-left: 1.5rem;
+          &::after {
+            width: 100%;
+          }
+        }
+        a {
+          color: $secondary-0;
+        }
       }
     }
 
     .social-icons {
       display: flex;
+      flex-direction: column;
       justify-content: space-around;
       height: 0;
       overflow: hidden;
@@ -72,14 +93,17 @@
       li {
         margin: 0.5rem 1rem;
       }
-      // a{
-      //   &:hover {
-      //     color: $primary-7;
-      //   }
-      //   &:visited {
-      //     color: inherit;
-      //   }
-      // }
+      a {
+        svg {
+          color: $primary-6;
+          &:hover {
+            color: $primary-7;
+          }
+          &:visited {
+            color: inherit;
+          }
+        }
+      }
     }
   }
 }
@@ -109,8 +133,8 @@
         display: flex;
         li {
           padding: 0;
-          margin: 0 1rem;
-          
+          // margin: 0 1rem;
+
           &:visited {
             color: inherit;
           }

@@ -1,26 +1,68 @@
 // dark shades of primary color
-$primary-0: hsl(210, 75%, 21%);
-$primary-1: hsl(210, 75%, 29%);
-$primary-2: hsl(210, 75%, 37%);
-$primary-3: hsl(210, 75%, 45%);
-$primary-4: hsl(210, 75%, 52%);
-$primary-5: hsl(210, 75%, 60%);
-$primary-6: hsl(210, 75%, 67%);
-$primary-7: hsl(210, 75%, 74%);
-$primary-8: hsl(210, 75%, 81%);
-$primary-9: hsl(210, 75%, 88%);
+$primary-0: hsl(124, 29%, 21%);
+$primary-1: hsl(124, 29%, 29%);
+$primary-2: hsl(124, 29%, 37%);
+$primary-3: hsl(124, 29%, 45%);
+$primary-4: hsl(124, 29%, 52%);
+$primary-5: hsl(124, 29%, 60%);
+$primary-6: hsl(124, 29%, 67%);
+$primary-7: hsl(124, 29%, 74%);
+$primary-8: hsl(124, 29%, 81%);
+$primary-9: hsl(124, 29%, 88%);
 
-// seconday 
-$seconday-0: hsl(30, 75%, 21%);
-$seconday-1: hsl(30, 75%, 29%);
-$seconday-2: hsl(30, 75%, 37%);
-$seconday-3: hsl(30, 75%, 45%);
-$seconday-4: hsl(30, 75%, 52%);
-$seconday-5: hsl(30, 75%, 60%);
-$seconday-6: hsl(30, 75%, 67%);
-$seconday-7: hsl(30, 75%, 74%);
-$seconday-8: hsl(30, 75%, 81%);
-$seconday-9: hsl(30, 75%, 88%);
+// 24, 59
+
+// seconday
+$secondary-0: hsl(24, 59%, 21%);
+$secondary-1: hsl(24, 59%, 29%);
+$secondary-2: hsl(24, 59%, 37%);
+$secondary-3: hsl(24, 59%, 45%);
+$secondary-4: hsl(24, 59%, 52%);
+$secondary-5: hsl(24, 59%, 60%);
+$secondary-6: hsl(24, 59%, 68%);
+$secondary-7: hsl(24, 59%, 74%);
+$secondary-8: hsl(24, 59%, 81%);
+$secondary-9: hsl(24, 59%, 88%);
+
+
+$third-0: hsl(210, 30%, 21%);
+$third-1: hsl(210, 30%, 29%);
+$third-2: hsl(210, 30%, 37%);
+$third-3: hsl(210, 30%, 45%);
+$third-4: hsl(210, 30%, 52%);
+$third-5: hsl(210, 30%, 60%);
+$third-6: hsl(210, 30%, 67%);
+$third-7: hsl(210, 30%, 74%);
+$third-8: hsl(210, 30%, 81%);
+$third-9: hsl(210, 30%, 88%);
+
+
+
+$fourth-0: hsl(359, 58%, 21%);
+$fourth-1: hsl(359, 58%, 29%);
+$fourth-2: hsl(359, 58%, 37%);
+$fourth-3: hsl(359, 58%, 45%);
+$fourth-4: hsl(359, 58%, 52%);
+$fourth-5: hsl(359, 58%, 60%);
+$fourth-6: hsl(359, 58%, 68%);
+$fourth-7: hsl(359, 58%, 74%);
+$fourth-8: hsl(359, 58%, 81%);
+$fourth-9: hsl(359, 58%, 88%);
+
+$fifth-0: hsl(124, 29%, 21%);
+$fifth-1: hsl(124, 29%, 29%);
+$fifth-2: hsl(124, 29%, 37%);
+$fifth-3: hsl(124, 29%, 45%);
+$fifth-4: hsl(124, 29%, 52%);
+$fifth-5: hsl(124, 29%, 60%);
+$fifth-6: hsl(124, 29%, 68%);
+$fifth-7: hsl(124, 29%, 74%);
+$fifth-8: hsl(124, 29%, 81%);
+$fifth-9: hsl(124, 29%, 88%);
+
+
+
+
 
 // dark shades of grey color
 
@@ -38,9 +80,19 @@ $grey-9: hsl(210, 30%, 88%);
 // lighter shades of grey color
 
 // misc color
+$font-color: hsl(263, 11%, 24%);
 $white: #eee;
 $black: #222;
+
 $red-dark: hsl(0, 100%, 40%);
 $red-light: hsl(0, 67%, 57%);
 $green-dark: hsl(125, 59%, 43%);
 $green-light: hsl(125, 86%, 57%);
+
+$onyx: hsl(207, 8%, 21%);
+// $feldgrau: hsl(184, 9%, 32%);
+$unbleached-silk: hsl(15, 65%, 88%);
+$auburn: hsl(359, 58%, 39%);
+// $sunray: hsl(36, 87%, 67%);
+$color: hsl(24, 59%, 68%);
+// $blue: hsl(188, 39%, 36%);

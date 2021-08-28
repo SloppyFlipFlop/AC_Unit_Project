@@ -11,6 +11,12 @@ export const links = [
     page: <Home />,
   },
   {
+    id: 4,
+    url: "/about",
+    text: "about",
+    // page: <About />,
+  },
+  {
     id: 2,
     url: "/admin",
     text: "admin",
