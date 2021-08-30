@@ -3,8 +3,8 @@
 @use '../util/mixins'as *;
 
 .navbar {
-  background: linear-gradient(to right, $secondary-5, $secondary-6);
-  
+  // background: linear-gradient(to right, $secondary-5, $secondary-6);
+  background: transparent;
   width: 20vw;
   height: 100vh;
   box-shadow: $light-shadow;
@@ -21,14 +21,18 @@
     justify-content: space-between;
     .nav-header {
       @include flex-space;
-      padding: 1rem;
+      width: inherit;
+      padding-right: 0px;
+      padding-left: 0px;
       height: 100px;
-      width: 100px;
     }
     .nav-toggle {
       font-size: 1.5rem;
       color: $primary-4;
       transition: $transition;
+      position: absolute;
+      top: 1%;
+      left: 88%;
       &:hover {
         color: $primary-4;
         transform: rotate(90deg);
@@ -109,64 +113,64 @@
 }
 
 // greater then 768px
-@include tablet {
-  .navbar {
-    .nav-center {
-      max-width: 1200px;
-      @include center-auto;
-      @include flex-space;
-      padding: 1rem;
+// @include tablet {
+//   .navbar {
+//     .nav-center {
+//       max-width: 1200px;
+//       @include center-auto;
+//       @include flex-space;
+//       padding: 1rem;
 
-      .logo {
-        height: 40px;
-      }
-      .nav-header {
-        padding: 0;
-      }
-      .nav-toggle {
-        display: none;
-      }
-      .links-conatiner {
-        height: auto;
-      }
-      .links {
-        display: flex;
-        li {
-          padding: 0;
-          // margin: 0 1rem;
+//       .logo {
+//         height: 40px;
+//       }
+//       .nav-header {
+//         padding: 0;
+//       }
+//       .nav-toggle {
+//         display: none;
+//       }
+//       .links-conatiner {
+//         height: auto;
+//       }
+//       .links {
+//         display: flex;
+//         li {
+//           padding: 0;
+//           // margin: 0 1rem;
 
-          &:visited {
-            color: inherit;
-          }
-          &:hover {
-            padding: 0;
-            background: transparent;
-            // &::after {
-            //   @include pseudo;
-            //   height: 3px;
-            //   background: $primary-4;
-            //   position: absolute;
-            //   bottom: 0;
-            // }
-          }
-        }
-      }
+//           &:visited {
+//             color: inherit;
+//           }
+//           &:hover {
+//             padding: 0;
+//             background: transparent;
+//             // &::after {
+//             //   @include pseudo;
+//             //   height: 3px;
+//             //   background: $primary-4;
+//             //   position: absolute;
+//             //   bottom: 0;
+//             // }
+//           }
+//         }
+//       }
 
-      .social-icons {
-        display: flex;
-        height: auto;
-        a {
-          margin: 0 0.5rem;
-          color: $primary-4;
-          transition: $transition;
-          &:hover {
-            color: $primary-7;
-          }
-          &:visited {
-            color: inherit;
-          }
-        }
-      }
-    }
-  }
-}
+//       .social-icons {
+//         display: flex;
+//         height: auto;
+//         a {
+//           margin: 0 0.5rem;
+//           color: $primary-4;
+//           transition: $transition;
+//           &:hover {
+//             color: $primary-7;
+//           }
+//           &:visited {
+//             color: inherit;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
