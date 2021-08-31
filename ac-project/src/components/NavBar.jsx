@@ -4,7 +4,7 @@ import { FaBars, FaSleigh } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { links, socials } from "../utils/consts";
 
-import logo from "../utils/logo.svg";
+import logo from "../utils/images/logo.svg";
 
 const NavBar = () => {
   const [showNavBar, setShowNavBar] = useState(false);

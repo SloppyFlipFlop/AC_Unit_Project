@@ -1,11 +1,22 @@
 // import logo from "./logo.svg";
+import React, { useState, useEffect } from 'react'
 
 import { Route, Switch } from "react-router-dom";
 import { links } from "./utils/consts";
 import { Home } from "./Pages";
 import NavBar from "./components/NavBar";
+
+
 function App() {
+  
+
+
+
   return (
+
+    
+
+
     <>
       <NavBar />
       <Switch>
@@ -24,11 +35,16 @@ function App() {
               </Route>
             );
           })}
+          
       </Switch>
 
-      <main className="container">
-        
+      <main className="conatiner">
+        <div className="landingPicture">
+        <img src="./utils/images/pexels-matt-hardy-35603661.png" alt="rv image" />
+        <h3>Name of Company</h3>
+        </div>
       </main>
+      {/* {`container ${showNavBar && "expandFull"}`} */}
     </>
   );
 }

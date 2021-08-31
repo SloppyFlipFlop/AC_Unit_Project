@@ -311,8 +311,8 @@ svg {
 .navbar {
   transition: all 0.5s linear;
   overflow: hidden;
-  background: transparent;
   width: 0;
+  background: #eee;
   height: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -408,7 +408,7 @@ svg {
   z-index: 1;
   position: fixed;
   top: 1%;
-  left: 88%;
+  left: 85%;
 }
 .navbar .nav-toggle:hover {
   color: #61a866;
@@ -418,6 +418,11 @@ svg {
 }
 
 .container {
+  background: #61a866;
   margin-top: 0;
   box-shadow: none;
+}
+.container img {
+  width: 100vw;
+  height: 100vh;
 }/*# sourceMappingURL=main.css.map */
