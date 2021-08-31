@@ -3,7 +3,7 @@
 @use '../util/mixins'as *;
 
 .navbar {
-  background: $white;
+  background: $primary-5;
   box-shadow: $light-shadow;
   .nav-center {
     .nav-header {
@@ -12,11 +12,11 @@
     }
     .nav-toggle {
       font-size: 1.5rem;
-      color: $primary-4;
+      color: $primary-0;
       transition: $transition;
       &:hover {
-        color: $primary-4;
-        transform: rotate(90deg);
+        color: $primary-2;
+        // transform: rotate(90deg);
       }
       .logo {
         height: 30px;
@@ -31,7 +31,6 @@
     }
 
     .links li {
-      color: $grey-2;
       font-size: 1rem;
       text-transform: capitalize;
       letter-spacing: $spacing;
@@ -39,25 +38,26 @@
       padding: 0.5rem 1rem;
       transition: $transition;
       position: relative;
+      a{
+        color: $primary-0;
+        font-weight: bold;
+      }
       &::after {
         @include pseudo;
         height: 3px;
-        background: $primary-4;
+        // background: $primary-5;
         position: absolute;
         bottom: 0;
         width: 0;
         transition: $transition;
       }
       &:hover {
-        background: $primary-4;
-        color: $primary-4;
+        // background: $primary-4;
+        // color: $primary-4;
         padding-left: 1.5rem;
         &::after {
           width: 100%;
         }
-      }
-      a {
-        color: $seconday-4;
       }
     }
 
@@ -72,14 +72,16 @@
       li {
         margin: 0.5rem 1rem;
       }
-      // a{
-      //   &:hover {
-      //     color: $primary-7;
-      //   }
-      //   &:visited {
-      //     color: inherit;
-      //   }
-      // }
+      svg{
+        color: $primary-0;
+        transition: $transition;
+        &:hover {
+          color: $primary-2;
+        }
+        &:visited {
+          color: inherit;
+        }
+      }
     }
   }
 }
