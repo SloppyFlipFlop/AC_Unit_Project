@@ -7,51 +7,44 @@ import { links, socials } from "../utils/consts";
 import logo from "../utils/logo.svg";
 
 const NavBar = () => {
-  const [showLinks, setShowLinks] = useState(false);
+  const [showNavBar, setShowNavBar] = useState(false);
   const checkSize = () => {
     if (window.innerWidth > 768) {
-      setShowLinks(true);
+      setShowNavBar(true);
     }
     if (window.innerWidth <= 768) {
-      setShowLinks(true);
+      setShowNavBar(true);
     }
   };
   useEffect(() => {
-    checkSize()
-    window.addEventListener("resize", checkSize)
-    return (
-      window.removeEventListener("resize", checkSize)
-    )
+    checkSize();
+    window.addEventListener("resize", checkSize);
+    return window.removeEventListener("resize", checkSize);
   }, []);
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${showNavBar && "show"}`}>
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} alt="logo" classroom="logo" />
-          <button
-            className="nav-toggle"
-            onClick={() => setShowLinks(!showLinks)}
-          >
-            <FaBars />
-          </button>
         </div>
 
-        <div className={`links-container ${showLinks && "show"}`}>
+        <div className="links-container">
           <ul className="links">
             {links
-              .filter((link) => link.text !== "Error" && link.text !== "admin")
+              .filter((link) => link.text !== "Error" && link.text !== "Admin")
               .map((link) => {
                 const { url, id, text } = link;
                 return (
                   <li key={id}>
-                    <Link to={url}>{text}</Link>
+                    {/* <Link to={url}>{text}</Link> */}
+                    <a href={url}>{text}</a>
                   </li>
                 );
               })}
           </ul>
         </div>
-        <ul className={`social-icons ${showLinks && "show"}`}>
+        <ul className="social-icons">
           {socials.map((social) => {
             const { url, id, icon } = social;
             return (
@@ -62,6 +55,9 @@ const NavBar = () => {
           })}
         </ul>
       </div>
+      <button className="nav-toggle" onClick={() => setShowNavBar(!showNavBar)}>
+        <FaBars />
+      </button>
     </nav>
   );
 };

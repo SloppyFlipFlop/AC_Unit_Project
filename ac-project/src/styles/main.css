@@ -309,14 +309,22 @@ svg {
 }
 
 .navbar {
+  transition: all 0.5s linear;
+  overflow: hidden;
   background: transparent;
-  width: 20vw;
-  height: 100vh;
+  width: 0;
+  height: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.navbar.show {
+  width: 20vw;
 }
 .navbar .nav-center {
   flex-direction: column;
@@ -334,40 +342,23 @@ svg {
   padding-left: 0px;
   height: 100px;
 }
-.navbar .nav-center .nav-toggle {
-  font-size: 1.5rem;
-  color: #61a866;
-  transition: all 0.5s linear;
-  position: absolute;
-  top: 1%;
-  left: 88%;
-}
-.navbar .nav-center .nav-toggle:hover {
-  color: #61a866;
-  transform: rotate(90deg);
-}
-.navbar .nav-center .nav-toggle .logo {
-  height: 30px;
-}
 .navbar .nav-center .links-container {
   display: flex;
   flex-direction: column;
-  height: 0;
-  overflow: hidden;
-}
-.navbar .nav-center .links-container.show {
-  height: auto;
 }
 .navbar .nav-center .links {
   flex-direction: column;
 }
 .navbar .nav-center .links li {
   color: #3c3644;
-  font-size: 1rem;
+  margin: 1rem auto;
+  text-align: center;
   text-transform: capitalize;
   letter-spacing: 0.1rem;
   display: block;
-  margin: 0.5rem 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   transition: all 0.5s linear;
   position: relative;
 }
@@ -385,9 +376,7 @@ svg {
   transition: all 0.5s linear;
 }
 .navbar .nav-center .links li:hover {
-  background: #e4b596;
   color: #e4b596;
-  padding-left: 1.5rem;
 }
 .navbar .nav-center .links li:hover::after {
   width: 100%;
@@ -399,11 +388,6 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 0;
-  overflow: hidden;
-}
-.navbar .nav-center .social-icons.show {
-  height: auto;
 }
 .navbar .nav-center .social-icons li {
   margin: 0.5rem 1rem;
@@ -416,4 +400,24 @@ svg {
 }
 .navbar .nav-center .social-icons a svg:visited {
   color: inherit;
+}
+.navbar .nav-toggle {
+  font-size: 1.5rem;
+  color: #61a866;
+  transition: all 0.5s linear;
+  z-index: 1;
+  position: fixed;
+  top: 1%;
+  left: 88%;
+}
+.navbar .nav-toggle:hover {
+  color: #61a866;
+}
+.navbar .nav-toggle .logo {
+  height: 30px;
+}
+
+.container {
+  margin-top: 0;
+  box-shadow: none;
 }/*# sourceMappingURL=main.css.map */
