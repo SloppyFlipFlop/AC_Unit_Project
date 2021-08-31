@@ -13,8 +13,6 @@ function App() {
           <Home />
         </Route>
 
-        
-
         {/* So we are going to filter out the links that don't equal "Home" and map those links */}
         {links
           .filter((link) => link.text !== "Home")
@@ -26,9 +24,11 @@ function App() {
               </Route>
             );
           })}
-
-        
       </Switch>
+
+      <main className="container">
+        
+      </main>
     </>
   );
 }

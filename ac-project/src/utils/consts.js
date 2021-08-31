@@ -2,23 +2,42 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram} from "react-icons/fa";
 import React from "react";
 import { Home, Error} from "../Pages";
 import Admin from "../Pages/Admin"
+
 export const links = [
   
   {
     id: 1,
-    url: "/",
+    url: "#home",
     text: "Home",
     page: <Home />,
   },
   {
     id: 2,
+    url: "#about",
+    text: "About",
+    // page: <About />,
+  },
+  {
+    id: 3,
+    url: "#about",
+    text: "Contact",
+    // page: <About />,
+  },
+  {
+    id: 4,
+    url: "#about",
+    text: "galley",
+    // page: <About />,
+  },
+  {
+    id: 5,
     url: "/admin",
-    text: "admin",
+    text: "Admin",
     page: <Admin />,
   },
   
   {
-    id: 3,
+    id: 6,
     url: "*",
     text: "Error",
     page: <Error />,

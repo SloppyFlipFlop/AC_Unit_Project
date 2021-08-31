@@ -2,141 +2,93 @@
 @use '../util/variables'as *;
 @use '../util/mixins'as *;
 
+// Styles for NavBar ... for phone
 .navbar {
-  background: $primary-5;
+  color: $primary-4;
+  transition: $transition;
+  overflow: hidden;
+  &.show {
+    width: 20vw;
+  }
+  background: transparent;
+  width: 0;
+  height: 100%;
   box-shadow: $light-shadow;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
   .nav-center {
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
     .nav-header {
       @include flex-space;
-      padding: 1rem;
-    }
-    .nav-toggle {
-      font-size: 1.5rem;
-      color: $primary-0;
-      transition: $transition;
-      &:hover {
-        color: $primary-2;
-        // transform: rotate(90deg);
-      }
-      .logo {
-        height: 30px;
-      }
-    }
-    .links-container {
-      height: 0;
-      overflow: hidden;
-      &.show {
-        height: auto;
-      }
+      width: inherit;
+      padding-right: 0px;
+      padding-left: 0px;
+      height: 100px;
     }
 
-    .links li {
-      font-size: 1rem;
-      text-transform: capitalize;
-      letter-spacing: $spacing;
-      display: block;
-      padding: 0.5rem 1rem;
-      transition: $transition;
-      position: relative;
-      a{
-        color: $primary-0;
-        font-weight: bold;
-      }
-      &::after {
-        @include pseudo;
-        height: 3px;
-        // background: $primary-5;
-        position: absolute;
-        bottom: 0;
-        width: 0;
-        transition: $transition;
-      }
-      &:hover {
-        // background: $primary-4;
-        // color: $primary-4;
-        padding-left: 1.5rem;
+    .links-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .links {
+      flex-direction: column;
+
+      li {
+        color: $font-color;
+
+        margin: 1rem auto;
+        text-align: center;
+
+        text-transform: capitalize;
+        letter-spacing: 0.1rem;
+        display: block;
+        width: fit-content;
+
+        transition: all 0.5s linear;
+        position: relative;
         &::after {
-          width: 100%;
+          @include pseudo;
+          height: 3px;
+          background: $primary-4;
+          position: absolute;
+          bottom: 0;
+          width: 0;
+          transition: $transition;
+        }
+        &:hover {
+          color: $secondary-7;
+          &::after {
+            width: 100%;
+          }
+        }
+        a {
+          color: $secondary-0;
         }
       }
     }
 
     .social-icons {
       display: flex;
+      flex-direction: column;
       justify-content: space-around;
-      height: 0;
-      overflow: hidden;
-      &.show {
-        height: auto;
-      }
+
       li {
         margin: 0.5rem 1rem;
       }
-      svg{
-        color: $primary-0;
-        transition: $transition;
-        &:hover {
-          color: $primary-2;
-        }
-        &:visited {
-          color: inherit;
-        }
-      }
-    }
-  }
-}
-
-// greater then 768px
-@include tablet {
-  .navbar {
-    .nav-center {
-      max-width: 1200px;
-      @include center-auto;
-      @include flex-space;
-      padding: 1rem;
-
-      .logo {
-        height: 40px;
-      }
-      .nav-header {
-        padding: 0;
-      }
-      .nav-toggle {
-        display: none;
-      }
-      .links-conatiner {
-        height: auto;
-      }
-      .links {
-        display: flex;
-        li {
-          padding: 0;
-          margin: 0 1rem;
-          
-          &:visited {
-            color: inherit;
-          }
-          &:hover {
-            padding: 0;
-            background: transparent;
-            // &::after {
-            //   @include pseudo;
-            //   height: 3px;
-            //   background: $primary-4;
-            //   position: absolute;
-            //   bottom: 0;
-            // }
-          }
-        }
-      }
-
-      .social-icons {
-        display: flex;
-        height: auto;
-        a {
-          margin: 0 0.5rem;
-          color: $primary-4;
-          transition: $transition;
+      a {
+        svg {
+          color: $primary-6;
           &:hover {
             color: $primary-7;
           }
@@ -147,4 +99,89 @@
       }
     }
   }
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: $primary-4;
+    transition: $transition;
+    z-index: 1;
+    position: fixed;
+    top: 1%;
+    left: 88%;
+    &:hover {
+      color: $primary-4;
+    }
+    .logo {
+      height: 30px;
+    }
+  }
 }
+
+// Body content styles for phone
+
+.container {
+  margin-top: 0;
+  box-shadow: none;
+}
+
+// greater then 768px
+// @include tablet {
+//   .navbar {
+//     .nav-center {
+//       max-width: 1200px;
+//       @include center-auto;
+//       @include flex-space;
+//       padding: 1rem;
+
+//       .logo {
+//         height: 40px;
+//       }
+//       .nav-header {
+//         padding: 0;
+//       }
+//       .nav-toggle {
+//         display: none;
+//       }
+//       .links-conatiner {
+//         height: auto;
+//       }
+//       .links {
+//         display: flex;
+//         li {
+//           padding: 0;
+//           // margin: 0 1rem;
+
+//           &:visited {
+//             color: inherit;
+//           }
+//           &:hover {
+//             padding: 0;
+//             background: transparent;
+//             // &::after {
+//             //   @include pseudo;
+//             //   height: 3px;
+//             //   background: $primary-4;
+//             //   position: absolute;
+//             //   bottom: 0;
+//             // }
+//           }
+//         }
+//       }
+
+//       .social-icons {
+//         display: flex;
+//         height: auto;
+//         a {
+//           margin: 0 0.5rem;
+//           color: $primary-4;
+//           transition: $transition;
+//           &:hover {
+//             color: $primary-7;
+//           }
+//           &:visited {
+//             color: inherit;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
