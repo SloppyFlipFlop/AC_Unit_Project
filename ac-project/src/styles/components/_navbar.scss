@@ -10,7 +10,7 @@
   &.show {
     width: 20vw;
   }
-  background: transparent;
+  background: $primary-1;
   width: 0;
   height: 100%;
   box-shadow: $light-shadow;
@@ -34,6 +34,12 @@
       padding-right: 0px;
       padding-left: 0px;
       height: 100px;
+      .logo{
+        // max-width: 130px;
+        padding: 2rem .5rem 0 .5rem;
+        margin: auto;
+        margin-top: 1rem;
+      }
     }
 
     .links-container {
@@ -45,9 +51,7 @@
       flex-direction: column;
 
       li {
-        color: $font-color;
-
-        margin: 1rem auto;
+        margin: 1.8rem auto;
         text-align: center;
 
         text-transform: capitalize;
@@ -57,23 +61,23 @@
 
         transition: all 0.5s linear;
         position: relative;
+        a{
+          color: $primary-8;
+          // font-weight: bold;
+        }
         &::after {
           @include pseudo;
-          height: 3px;
-          background: $primary-4;
+          height: 2px;
+          background: $primary-8;
           position: absolute;
           bottom: 0;
           width: 0;
           transition: $transition;
         }
         &:hover {
-          color: $secondary-7;
           &::after {
             width: 100%;
           }
-        }
-        a {
-          color: $secondary-0;
         }
       }
     }
@@ -84,11 +88,12 @@
       justify-content: space-around;
 
       li {
-        margin: 0.5rem 1rem;
+        margin: 0.6rem auto;
       }
       a {
         svg {
-          color: $primary-6;
+          color: $primary-8;
+          transition: $transition;
           &:hover {
             color: $primary-7;
           }
@@ -101,17 +106,14 @@
   }
   .nav-toggle {
     font-size: 1.5rem;
-    color: $primary-4;
+    color: $primary-1;
     transition: $transition;
     z-index: 1;
     position: fixed;
     top: 1%;
     left: 88%;
     &:hover {
-      color: $primary-4;
-    }
-    .logo {
-      height: 30px;
+      color: $primary-2;
     }
   }
 }

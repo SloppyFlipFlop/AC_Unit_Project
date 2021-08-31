@@ -26,7 +26,7 @@ const NavBar = () => {
     <nav className={`navbar ${showNavBar && "show"}`}>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} alt="logo" classroom="logo" />
+          <img src={logo} alt="logo" className="logo" />
         </div>
 
         <div className="links-container">

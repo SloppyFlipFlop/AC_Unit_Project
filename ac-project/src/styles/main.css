@@ -177,11 +177,7 @@ button, input[type=button] {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: #eee;
-<<<<<<< HEAD
-  color: #e6994d;
-=======
-  color: #d58d5d;
->>>>>>> 435c6bca30fd07e3d73deaf0eb447d375b2c22b9
+  color: #253646;
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -313,15 +309,12 @@ svg {
 }
 
 .navbar {
-<<<<<<< HEAD
-  background: #b8807a;
-=======
+  color: #a96660;
   transition: all 0.5s linear;
   overflow: hidden;
-  background: transparent;
+  background: #603734;
   width: 0;
   height: 100%;
->>>>>>> 435c6bca30fd07e3d73deaf0eb447d375b2c22b9
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -331,15 +324,6 @@ svg {
   top: 0;
   left: 0;
 }
-<<<<<<< HEAD
-.navbar .nav-center .nav-toggle {
-  font-size: 1.5rem;
-  color: #462825;
-  transition: all 0.5s linear;
-}
-.navbar .nav-center .nav-toggle:hover {
-  color: #7b4742;
-=======
 .navbar.show {
   width: 20vw;
 }
@@ -349,7 +333,6 @@ svg {
   display: flex;
   width: 20vw;
   justify-content: space-between;
->>>>>>> 435c6bca30fd07e3d73deaf0eb447d375b2c22b9
 }
 .navbar .nav-center .nav-header {
   display: flex;
@@ -360,6 +343,11 @@ svg {
   padding-left: 0px;
   height: 100px;
 }
+.navbar .nav-center .nav-header .logo {
+  padding: 2rem 0.5rem 0 0.5rem;
+  margin: auto;
+  margin-top: 1rem;
+}
 .navbar .nav-center .links-container {
   display: flex;
   flex-direction: column;
@@ -368,13 +356,8 @@ svg {
   flex-direction: column;
 }
 .navbar .nav-center .links li {
-<<<<<<< HEAD
-  font-size: 1rem;
-=======
-  color: #3c3644;
-  margin: 1rem auto;
+  margin: 1.8rem auto;
   text-align: center;
->>>>>>> 435c6bca30fd07e3d73deaf0eb447d375b2c22b9
   text-transform: capitalize;
   letter-spacing: 0.1rem;
   display: block;
@@ -385,8 +368,7 @@ svg {
   position: relative;
 }
 .navbar .nav-center .links li a {
-  color: #462825;
-  font-weight: bold;
+  color: #ddc2c0;
 }
 .navbar .nav-center .links li::after {
   content: "";
@@ -394,116 +376,37 @@ svg {
   position: absolute;
   width: 100%;
   height: 100%;
-  height: 3px;
-<<<<<<< HEAD
-=======
-  background: #61a866;
->>>>>>> 435c6bca30fd07e3d73deaf0eb447d375b2c22b9
+  height: 2px;
+  background: #ddc2c0;
   position: absolute;
   bottom: 0;
   width: 0;
   transition: all 0.5s linear;
 }
-.navbar .nav-center .links li:hover {
-<<<<<<< HEAD
-  padding-left: 1.5rem;
-=======
-  color: #e4b596;
->>>>>>> 435c6bca30fd07e3d73deaf0eb447d375b2c22b9
-}
 .navbar .nav-center .links li:hover::after {
   width: 100%;
 }
-<<<<<<< HEAD
-=======
-.navbar .nav-center .links li a {
-  color: #552f16;
-}
->>>>>>> 435c6bca30fd07e3d73deaf0eb447d375b2c22b9
 .navbar .nav-center .social-icons {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 .navbar .nav-center .social-icons li {
-  margin: 0.5rem 1rem;
+  margin: 0.6rem auto;
 }
-<<<<<<< HEAD
-.navbar .nav-center .social-icons svg {
-  color: #462825;
+.navbar .nav-center .social-icons a svg {
+  color: #ddc2c0;
   transition: all 0.5s linear;
 }
-.navbar .nav-center .social-icons svg:hover {
-  color: #7b4742;
-}
-.navbar .nav-center .social-icons svg:visited {
-  color: inherit;
-}
-
-@media only screen and (min-width: 768px) {
-  .navbar .nav-center {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  .navbar .nav-center .logo {
-    height: 40px;
-  }
-  .navbar .nav-center .nav-header {
-    padding: 0;
-  }
-  .navbar .nav-center .nav-toggle {
-    display: none;
-  }
-  .navbar .nav-center .links-conatiner {
-    height: auto;
-  }
-  .navbar .nav-center .links {
-    display: flex;
-  }
-  .navbar .nav-center .links li {
-    padding: 0;
-    margin: 0 1rem;
-  }
-  .navbar .nav-center .links li:visited {
-    color: inherit;
-  }
-  .navbar .nav-center .links li:hover {
-    padding: 0;
-    background: transparent;
-  }
-  .navbar .nav-center .social-icons {
-    display: flex;
-    height: auto;
-  }
-  .navbar .nav-center .social-icons a {
-    margin: 0 0.5rem;
-    color: #a96660;
-    transition: all 0.5s linear;
-  }
-  .navbar .nav-center .social-icons a:hover {
-    color: #d1aca9;
-  }
-  .navbar .nav-center .social-icons a:visited {
-    color: inherit;
-  }
-=======
-.navbar .nav-center .social-icons a svg {
-  color: #92c396;
-}
 .navbar .nav-center .social-icons a svg:hover {
-  color: #a9d0ac;
+  color: #d1aca9;
 }
 .navbar .nav-center .social-icons a svg:visited {
   color: inherit;
 }
 .navbar .nav-toggle {
   font-size: 1.5rem;
-  color: #61a866;
+  color: #603734;
   transition: all 0.5s linear;
   z-index: 1;
   position: fixed;
@@ -511,14 +414,10 @@ svg {
   left: 88%;
 }
 .navbar .nav-toggle:hover {
-  color: #61a866;
-}
-.navbar .nav-toggle .logo {
-  height: 30px;
+  color: #7b4742;
 }
 
 .container {
   margin-top: 0;
   box-shadow: none;
->>>>>>> 435c6bca30fd07e3d73deaf0eb447d375b2c22b9
 }/*# sourceMappingURL=main.css.map */

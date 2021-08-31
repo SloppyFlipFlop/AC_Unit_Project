@@ -19,14 +19,14 @@ export const links = [
   },
   {
     id: 3,
-    url: "#about",
+    url: "#contact",
     text: "Contact",
     // page: <About />,
   },
   {
     id: 4,
-    url: "#about",
-    text: "galley",
+    url: "#gallery",
+    text: "gallery",
     // page: <About />,
   },
   {
