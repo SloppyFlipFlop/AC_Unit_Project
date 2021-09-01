@@ -32,7 +32,13 @@ function App() {
       <main className="container">
         <div className="landingPicture" id="#home">
           <img src={rvimg} alt="rv image" />
-          <h3>Name of Company</h3>
+          <div className="landingInfo">
+            <h3>Name of Company</h3>
+            <p className="name">name</p>
+            <p className="address">address</p>
+            <p className="number">number</p>
+            <button className="btn">Contact Us</button>
+          </div>
         </div>
       </main>
     </>

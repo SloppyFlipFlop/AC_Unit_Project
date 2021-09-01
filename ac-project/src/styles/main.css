@@ -314,6 +314,7 @@ svg {
   overflow: hidden;
   width: 0;
   background: #43514f;
+  opacity: 85%;
   height: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -432,15 +433,39 @@ svg {
   background-size: cover;
   background-position: center;
 }
-.container .landingPicture h3 {
+.container .landingPicture .landingInfo {
+  background: #eee;
+  opacity: 80%;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 1rem 2rem;
+}
+.container .landingPicture .landingInfo h3 {
   font-weight: 500;
   font-style: italic;
+  font-size: 1.7rem;
   text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  color: #7a908d;
+  color: #313a39;
+  margin-bottom: 1.5rem;
+}
+.container .landingPicture .landingInfo p {
+  color: #313a39;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 0.1rem;
+}
+.container .landingPicture .landingInfo p.number {
+  margin-bottom: 1.5rem;
+}
+.container .landingPicture .landingInfo .btn {
+  width: 60%;
+  height: 100%;
+  color: #9F3232;
+  border: #9F3232 solid 1px;
+  border-radius: 0%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -454,8 +479,8 @@ svg {
     margin-top: 30%;
   }
   .navbar .nav-toggle {
-    top: 1%;
-    left: 94%;
+    top: 3%;
+    left: 92%;
   }
 
   .container {
@@ -470,7 +495,7 @@ svg {
     min-width: 140px;
   }
   .navbar .nav-toggle {
-    top: 1.5%;
-    left: 95%;
+    top: 3%;
+    left: 94%;
   }
-}/*# sourceMappingURL=main.css.map */
+}

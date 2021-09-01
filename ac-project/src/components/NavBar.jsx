@@ -8,19 +8,19 @@ import logo from "../utils/images/logo.svg";
 
 const NavBar = () => {
   const [showNavBar, setShowNavBar] = useState(false);
-  const checkSize = () => {
-    if (window.innerWidth > 768) {
-      setShowNavBar(true);
-    }
-    if (window.innerWidth <= 768) {
-      setShowNavBar(true);
-    }
-  };
-  useEffect(() => {
-    checkSize();
-    window.addEventListener("resize", checkSize);
-    return window.removeEventListener("resize", checkSize);
-  }, []);
+  // const checkSize = () => {
+  //   if (window.innerWidth > 768) {
+  //     setShowNavBar(true);
+  //   }
+  //   if (window.innerWidth <= 768) {
+  //     setShowNavBar(true);
+  //   }
+  // };
+  // useEffect(() => {
+  //   checkSize();
+  //   window.addEventListener("resize", checkSize);
+  //   return window.removeEventListener("resize", checkSize);
+  // }, []);
 
   return (
     <nav className={`navbar ${showNavBar && "show"}`}>
