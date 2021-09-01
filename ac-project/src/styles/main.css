@@ -326,7 +326,6 @@ svg {
 }
 .navbar.show {
   width: 20vw;
-  min-width: 85px;
 }
 .navbar .nav-center {
   flex-direction: column;
@@ -347,16 +346,14 @@ svg {
 .navbar .nav-center .nav-header .logo {
   padding: 2rem 0.5rem 0 0.5rem;
   margin: auto;
-  min-width: 85px;
+  margin-top: 1rem;
 }
 .navbar .nav-center .links-container {
   display: flex;
   flex-direction: column;
-  min-width: 85px;
 }
 .navbar .nav-center .links {
   flex-direction: column;
-  margin-top: 40%;
 }
 .navbar .nav-center .links li {
   margin: 1.8rem auto;
@@ -393,8 +390,6 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 1rem;
-  min-width: 85px;
 }
 .navbar .nav-center .social-icons li {
   margin: 0.6rem auto;
