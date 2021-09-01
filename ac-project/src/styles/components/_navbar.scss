@@ -27,7 +27,6 @@
     flex-direction: column;
     height: 100vh;
     display: flex;
-    width: 20vw;
     justify-content: space-between;
     .nav-header {
       @include flex-space;
@@ -107,6 +106,7 @@
       }
     }
   }
+
   .nav-toggle {
     font-size: 1.5rem;
     color: $primary-1;
@@ -135,6 +135,42 @@
   }
   
   
+}
+
+@include tablet {
+  .navbar {
+    &.show {
+      width: 15vw;
+    }
+    .nav-center{
+      .nav-header{
+        .logo{
+          max-width: 200px;
+        }
+      }
+    }
+    .nav-toggle{
+      top: 1%;
+      left: 94%;
+    }
+  }
+}
+
+@include large {
+  .navbar {
+    &.show {
+      max-width: 170px;
+    }
+    .nav-center{
+      .links{
+        margin-top: 30%;
+      }
+    }
+    .nav-toggle{
+      top: 1.5%;
+      left: 95%;
+    }
+  }
 }
 
 // greater then 768px

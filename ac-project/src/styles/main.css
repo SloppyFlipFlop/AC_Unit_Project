@@ -332,7 +332,6 @@ svg {
   flex-direction: column;
   height: 100vh;
   display: flex;
-  width: 20vw;
   justify-content: space-between;
 }
 .navbar .nav-center .nav-header {
@@ -430,4 +429,29 @@ svg {
 .container img {
   width: 100vw;
   height: 100vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar.show {
+    width: 15vw;
+  }
+  .navbar .nav-center .nav-header .logo {
+    max-width: 200px;
+  }
+  .navbar .nav-toggle {
+    top: 1%;
+    left: 94%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navbar.show {
+    max-width: 170px;
+  }
+  .navbar .nav-center .links {
+    margin-top: 30%;
+  }
+  .navbar .nav-toggle {
+    top: 1.5%;
+    left: 95%;
+  }
 }/*# sourceMappingURL=main.css.map */
