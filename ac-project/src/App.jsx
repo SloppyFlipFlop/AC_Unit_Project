@@ -1,19 +1,21 @@
 // import logo from "./logo.svg";
 import React, { useState, useEffect } from "react";
-
 import { Route, Switch } from "react-router-dom";
 import { links } from "./utils/consts";
-import { Home } from "./Pages";
+import { Home, Error } from "./Pages";
 import NavBar from "./components/NavBar";
-import rvimg from "./utils/images/rv-picture.jpg";
+// import rvimg from "./utils/images/rv-picture.jpg";
 
 function App() {
   return (
     <>
       <NavBar />
       <Switch>
-        <Route path exact="/">
+        <Route path exact="/#home">
           <Home />
+        </Route>
+        <Route path="*">
+          <Error />
         </Route>
 
         {/* So we are going to filter out the links that don't equal "Home" and map those links */}
@@ -28,19 +30,6 @@ function App() {
             );
           })}
       </Switch>
-
-      <main className="container">
-        <div className="landingPicture" id="#home">
-          <img src={rvimg} alt="rv image" />
-          <div className="landingInfo">
-            <h3>Name of Company</h3>
-            <p className="name">name</p>
-            <p className="address">address</p>
-            <p className="number">number</p>
-            <button className="btn">Contact Us</button>
-          </div>
-        </div>
-      </main>
     </>
   );
 }
