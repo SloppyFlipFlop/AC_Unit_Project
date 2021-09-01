@@ -1,23 +1,14 @@
 // import logo from "./logo.svg";
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 
 import { Route, Switch } from "react-router-dom";
 import { links } from "./utils/consts";
 import { Home } from "./Pages";
 import NavBar from "./components/NavBar";
-import rvimg from "./utils/images/rv-picture.jpg"
-
+import rvimg from "./utils/images/rv-picture.jpg";
 
 function App() {
-  
-
-
-
   return (
-
-    
-
-
     <>
       <NavBar />
       <Switch>
@@ -36,16 +27,14 @@ function App() {
               </Route>
             );
           })}
-          
       </Switch>
 
-      <main className="conatiner">
-        <div className="landingPicture">
-        <img src={rvimg} alt="rv image"/>
-        <h3>Name of Company</h3>
+      <main className="container">
+        <div className="landingPicture" id="#home">
+          <img src={rvimg} alt="rv image" />
+          <h3>Name of Company</h3>
         </div>
       </main>
-      {/* {`container ${showNavBar && "expandFull"}`} */}
     </>
   );
 }

@@ -326,7 +326,6 @@ svg {
 }
 .navbar.show {
   width: 20vw;
-  min-width: 85px;
 }
 .navbar .nav-center {
   flex-direction: column;
@@ -346,16 +345,14 @@ svg {
 .navbar .nav-center .nav-header .logo {
   padding: 2rem 0.5rem 0 0.5rem;
   margin: auto;
-  min-width: 85px;
+  margin-top: 1rem;
 }
 .navbar .nav-center .links-container {
   display: flex;
   flex-direction: column;
-  min-width: 85px;
 }
 .navbar .nav-center .links {
   flex-direction: column;
-  margin-top: 40%;
 }
 .navbar .nav-center .links li {
   margin: 1.8rem auto;
@@ -392,8 +389,6 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 1rem;
-  min-width: 85px;
 }
 .navbar .nav-center .social-icons li {
   margin: 0.6rem auto;
@@ -426,9 +421,26 @@ svg {
   margin-top: 0;
   box-shadow: none;
 }
-.container img {
-  width: 100vw;
+.container .landingPicture {
   height: 100vh;
+  width: 100vw;
+}
+.container .landingPicture img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container .landingPicture h3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-style: italic;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #7a908d;
 }
 
 @media only screen and (min-width: 768px) {
@@ -436,19 +448,26 @@ svg {
     width: 15vw;
   }
   .navbar .nav-center .nav-header .logo {
-    max-width: 200px;
+    min-width: 110px;
+  }
+  .navbar .nav-center .links {
+    margin-top: 30%;
   }
   .navbar .nav-toggle {
     top: 1%;
     left: 94%;
+  }
+
+  .container {
+    margin: 0;
   }
 }
 @media only screen and (min-width: 1024px) {
   .navbar.show {
     max-width: 170px;
   }
-  .navbar .nav-center .links {
-    margin-top: 30%;
+  .navbar .nav-center .nav-header .logo {
+    min-width: 140px;
   }
   .navbar .nav-toggle {
     top: 1.5%;
