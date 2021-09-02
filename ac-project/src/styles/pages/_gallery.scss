@@ -1,0 +1,84 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables'as *;
+@use '../util/mixins'as *;
+
+#gallery{
+    background: $primary-4;
+    @include flex-center-column;
+    padding: 2rem 0.6rem;
+    h3 {
+        color: $primary-1;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+    }
+    .buttons{
+        @include flex-space;
+        margin-bottom: 0;
+        button{
+            margin: .4rem .5rem;
+            text-transform: uppercase;
+            padding: .3rem;
+            width: auto;
+            font-size: 0.6rem;
+            color: $primary-4;
+            background: $primary-1;
+            border-radius: 0%;
+            &#button-all, &#button-none{
+                padding: .3rem .6rem;
+            }
+        }
+    }
+    .images{
+        width: 75%;
+        @include flex-center;
+        flex-wrap: wrap;
+        img{
+            margin-bottom: .3rem;
+            // width: 70%;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@include tablet {
+    #gallery{
+        .buttons{
+            button{
+                margin: .2rem .7rem;
+                font-size: .9rem;
+            }
+        }
+        .images{
+            width: 90%;
+            img{
+                padding: .8rem;
+                margin-bottom: 0;
+                width: 42%;
+            }
+        }
+    }
+}
+
+@include large {
+    #gallery{
+        .buttons{
+            button{
+                margin: .2rem .9rem;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@include desktop {
+    #gallery{
+        .images{
+            width: 90%;
+            img{
+                width: 30%;
+            }
+        }
+    }
+}

@@ -315,7 +315,8 @@ svg {
 footer {
   padding: 1rem 0;
   font-weight: 500;
-  background: #566765;
+  background: #43514f;
+  color: #7a908d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -358,7 +359,7 @@ footer {
 }
 #home .landingPicture .landingInfo h5 {
   font-weight: 500;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-style: italic;
   color: #313a39;
   margin-bottom: 1.3rem;
@@ -367,18 +368,18 @@ footer {
   color: #313a39;
   font-weight: 500;
   font-style: italic;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin-bottom: 0.1rem;
 }
 #home .landingPicture .landingInfo p.number {
   margin-bottom: 1.5rem;
 }
 #home .landingPicture .landingInfo .btn {
-  width: 60%;
-  height: 100%;
+  padding: 0.2rem;
   font-size: 0.7rem;
+  font-weight: 700;
   color: #9f3232;
-  border: #9f3232 solid 1px;
+  border: #9f3232 solid 2px;
   border-radius: 0%;
 }
 
@@ -404,7 +405,6 @@ footer {
   }
   #home .landingPicture .landingInfo .btn {
     font-size: 1.1rem;
-    width: 50%;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -432,12 +432,12 @@ footer {
   }
 }
 @media only screen and (min-width: 1280px) {
-  #home .landingPicture .landingInfo {
+  #home .landingInfo {
     width: 30%;
   }
 }
 #contact {
-  background: #7a908d;
+  background: #cad3d2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -496,7 +496,7 @@ footer {
 #contact form input[type=submit] {
   margin: 0.6rem 0 1rem;
   padding: 0.6rem;
-  color: #dee3e3;
+  color: #cad3d2;
   background: #43514f;
 }
 
@@ -517,18 +517,91 @@ footer {
   width: 85%;
   background: #b7c3c1;
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 #aboutUs .aboutUsInfo P {
   color: #43514f;
 }
 
+#gallery {
+  background: #7a908d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0.6rem;
+}
+#gallery h3 {
+  color: #43514f;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+#gallery .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+#gallery .buttons button {
+  margin: 0.4rem 0.5rem;
+  text-transform: uppercase;
+  padding: 0.3rem;
+  width: auto;
+  font-size: 0.6rem;
+  color: #7a908d;
+  background: #43514f;
+  border-radius: 0%;
+}
+#gallery .buttons button#button-all, #gallery .buttons button#button-none {
+  padding: 0.3rem 0.6rem;
+}
+#gallery .images {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#gallery .images img {
+  margin-bottom: 0.3rem;
+}
+#gallery .images img:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #gallery .buttons button {
+    margin: 0.2rem 0.7rem;
+    font-size: 0.9rem;
+  }
+  #gallery .images {
+    width: 90%;
+  }
+  #gallery .images img {
+    padding: 0.8rem;
+    margin-bottom: 0;
+    width: 42%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #gallery .buttons button {
+    margin: 0.2rem 0.9rem;
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #gallery .images {
+    width: 90%;
+  }
+  #gallery .images img {
+    width: 30%;
+  }
+}
 .navbar {
   color: #7a908d;
   transition: all 0.5s linear;
   overflow: hidden;
   width: 0;
-  background: #43514f;
-  opacity: 85%;
   height: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -543,6 +616,8 @@ footer {
   width: 20vw;
 }
 .navbar .nav-center {
+  background: #43514f;
+  opacity: 85%;
   flex-direction: column;
   height: 100vh;
   display: flex;
@@ -626,7 +701,7 @@ footer {
   z-index: 1;
   position: fixed;
   top: 1%;
-  left: 85%;
+  left: 88.5%;
 }
 .navbar .nav-toggle:hover {
   color: #566765;
@@ -646,8 +721,12 @@ footer {
     font-size: 1.2rem;
   }
   .navbar .nav-toggle {
-    top: 3%;
-    left: 90%;
+    top: 1.5%;
+    left: 92.5%;
+  }
+  .navbar .nav-toggle svg {
+    width: 50px;
+    height: 50px;
   }
 
   .container {
@@ -665,7 +744,11 @@ footer {
     font-size: 1.1rem;
   }
   .navbar .nav-toggle {
-    top: 3%;
-    left: 93%;
+    top: 2%;
+    left: 92%;
+  }
+  .navbar .nav-toggle svg {
+    width: 55px;
+    height: 55px;
   }
 }

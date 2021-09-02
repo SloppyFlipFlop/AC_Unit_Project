@@ -3,7 +3,7 @@
 @use '../util/mixins'as *;
 
 #contact {
-  background: $primary-4;
+  background: $primary-8;
   @include flex-center-column;
   padding: 2rem 0.6rem;
   h3 {
@@ -44,7 +44,7 @@
     input[type=submit] {
         margin: .6rem 0 1rem;
         padding: .6rem;
-        color: $primary-9;
+        color: $primary-8;
         background: $primary-1;
     }
   }

@@ -11,8 +11,6 @@
     width: 20vw;
   }
   width: 0;
-  background: $primary-1;
-  opacity: 85%;
   height: 100%;
   box-shadow: $light-shadow;
 
@@ -24,7 +22,8 @@
   top: 0;
   left: 0;
   .nav-center {
-    
+    background: $primary-1;
+    opacity: 85%;
     flex-direction: column;
     height: 100vh;
     display: flex;
@@ -114,7 +113,7 @@
     z-index: 1;
     position: fixed;
     top: 1%;
-    left: 85%;
+    left: 88.5%;
     &:hover {
       color: $primary-2;
     }
@@ -141,8 +140,12 @@
       }
     }
     .nav-toggle{
-      top: 3%;
-      left: 90%;
+      top: 1.5%;
+      left: 92.5%;
+      svg{
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 
@@ -169,8 +172,12 @@
       }
     }
     .nav-toggle{
-      top: 3%;
-      left: 93%;
+      top: 2%;
+      left: 92%;
+      svg{
+        width: 55px;
+        height: 55px;
+      }
     }
   }
 }

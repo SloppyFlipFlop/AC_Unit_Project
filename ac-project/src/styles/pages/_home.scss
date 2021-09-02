@@ -5,12 +5,9 @@
 // Landing Page Mobile Styles
 #home {
   background: $primary-4;
-
   margin-top: 0;
   box-shadow: none;
   .landingPicture {
-    // background-image: url("../utils/images/rv-picture.jpg");
-
     height: 100vh;
     width: 100vw;
 
@@ -35,11 +32,11 @@
         font-style: italic;
         text-shadow: $light-shadow;
         color: $primary-0;
-        margin-bottom: .3rem;
+        margin-bottom: 0.3rem;
       }
-      h5{
+      h5 {
         font-weight: 500;
-        font-size: .7rem;
+        font-size: 0.8rem;
         font-style: italic;
         color: $primary-0;
         margin-bottom: 1.3rem;
@@ -48,18 +45,18 @@
         color: $primary-0;
         font-weight: 500;
         font-style: italic;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         margin-bottom: 0.1rem;
         &.number {
           margin-bottom: 1.5rem;
         }
       }
       .btn {
-        width: 60%;
-        height: 100%;
+        padding: 0.2rem;
         font-size: 0.7rem;
+        font-weight: 700;
         color: #9f3232;
-        border: #9f3232 solid 1px;
+        border: #9f3232 solid 2px;
         border-radius: 0%;
       }
     }
@@ -76,9 +73,9 @@
         width: 40%;
         h3 {
           font-size: 2.3rem;
-          margin-bottom: .9rem;
+          margin-bottom: 0.9rem;
         }
-        h5{
+        h5 {
           font-size: 1rem;
           margin-bottom: 1.8rem;
         }
@@ -91,7 +88,6 @@
         }
         .btn {
           font-size: 1.1rem;
-          width: 50%;
         }
       }
     }
@@ -108,7 +104,7 @@
           font-size: 3.4rem;
           margin-bottom: 1.1rem;
         }
-        h5{
+        h5 {
           font-size: 1.4rem;
           margin-bottom: 1.8rem;
         }
@@ -129,10 +125,8 @@
 
 @include desktop {
   #home {
-    .landingPicture {
-      .landingInfo {
-        width: 30%;
-      }
+    .landingInfo {
+      width: 30%;
     }
   }
 }

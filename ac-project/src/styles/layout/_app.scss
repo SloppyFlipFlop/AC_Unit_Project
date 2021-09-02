@@ -3,8 +3,9 @@
 @use '../util/mixins'as *;
 
 .app{
-  background:   #7a908d;
+  background: $primary-4;
 }
+
 .btn {
   border-color: transparent;
   width: 35px;
@@ -66,7 +67,8 @@ svg {
 footer{
   padding: 1rem 0;
   font-weight: 500;
-  background: $primary-2;
+  background: $primary-1;
+  color: $primary-4;
   @include flex-center;
   padding: 1rem .6rem;
 }

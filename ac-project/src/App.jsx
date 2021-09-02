@@ -2,7 +2,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { links } from "./utils/consts";
-import { Home, AboutUs, Contact } from "./Pages";
+import { Home, AboutUs, Contact, Gallery } from "./Pages";
 import NavBar from "./components/NavBar";
 // import rvimg from "./utils/images/rv-picture.jpg";
 
@@ -26,6 +26,7 @@ function App() {
       <Home />
       <AboutUs />
       <Contact/>
+      <Gallery />
 
       <footer>
       COPYRIGHT © 2021 BRIGGS - ALL RIGHTS RESERVED.
