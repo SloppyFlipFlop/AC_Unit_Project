@@ -5,17 +5,16 @@
 #aboutUs{
     background: $primary-4;
     @include flex-center-column;
+    padding: 2rem .6rem 0;
     h3{
         color: $primary-1;
-        margin-top: 1.2rem;
         font-weight: 500;
+        margin-bottom: 1.2rem;
     }
     .aboutUsInfo{
         width: 85%;
         background: $primary-7;
-        // opacity: 50%;
         padding: 1rem;
-        margin-bottom: 1.2rem;
         P{
             color: $primary-1;
         }

@@ -13,7 +13,7 @@ export const links = [
   {
     id: 2,
     url: "#aboutUs",
-    text: "About Us",
+    text: "About",
     page: <AboutUs />,
   },
   {

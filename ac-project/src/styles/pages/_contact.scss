@@ -2,6 +2,50 @@
 @use '../util/variables'as *;
 @use '../util/mixins'as *;
 
-#contact{
-    background: $primary-4;
+#contact {
+  background: $primary-4;
+  @include flex-center-column;
+  padding: 2rem 0.6rem;
+  h3 {
+    color: $primary-1;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+  h5{
+    color: $primary-1;
+    font-weight: 500;
+    font-size: 1rem;
+    &.location{
+        margin-top: 1.1rem;
+    }
+  }
+  form {
+    @include flex-center-column;
+    input {
+      margin: 0.2rem;
+      &#userName,
+      &#email,
+      &#message {
+        width: 130%;
+        padding: 0.6rem;
+        border: 1px solid $primary-1;
+        color: $primary-9;
+        &::placeholder {
+          color: $primary-1;
+        }
+      }
+      &#message{
+        height: 7rem;
+        &::placeholder{
+            position: absolute;
+        }
+      }
+    }
+    input[type=submit] {
+        margin: .6rem 0 1rem;
+        padding: .6rem;
+        color: $primary-9;
+        background: $primary-1;
+    }
+  }
 }

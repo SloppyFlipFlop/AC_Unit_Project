@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <NavBar />
       <Switch>
         {links
@@ -26,7 +26,11 @@ function App() {
       <Home />
       <AboutUs />
       <Contact/>
-    </>
+
+      <footer>
+      COPYRIGHT © 2021 BRIGGS - ALL RIGHTS RESERVED.
+      </footer>
+    </div>
   );
 }
 

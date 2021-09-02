@@ -2,7 +2,9 @@
 @use '../util/variables'as *;
 @use '../util/mixins'as *;
 
-
+.app{
+  background:   #7a908d;
+}
 .btn {
   border-color: transparent;
   width: 35px;
@@ -61,3 +63,10 @@ svg {
   height: 35px;
 }
 
+footer{
+  padding: 1rem 0;
+  font-weight: 500;
+  background: $primary-2;
+  @include flex-center;
+  padding: 1rem .6rem;
+}

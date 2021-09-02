@@ -256,6 +256,10 @@ h4 {
     line-height: 1;
   }
 }
+.app {
+  background: #7a908d;
+}
+
 .btn {
   border-color: transparent;
   width: 35px;
@@ -308,6 +312,16 @@ svg {
   height: 35px;
 }
 
+footer {
+  padding: 1rem 0;
+  font-weight: 500;
+  background: #566765;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.6rem;
+}
+
 #home {
   background: #7a908d;
   margin-top: 0;
@@ -340,7 +354,14 @@ svg {
   font-style: italic;
   text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   color: #313a39;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+#home .landingPicture .landingInfo h5 {
+  font-weight: 500;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #313a39;
+  margin-bottom: 1.3rem;
 }
 #home .landingPicture .landingInfo p {
   color: #313a39;
@@ -368,6 +389,10 @@ svg {
   }
   #home .landingPicture .landingInfo h3 {
     font-size: 2.3rem;
+    margin-bottom: 0.9rem;
+  }
+  #home .landingPicture .landingInfo h5 {
+    font-size: 1rem;
     margin-bottom: 1.8rem;
   }
   #home .landingPicture .landingInfo p {
@@ -389,6 +414,10 @@ svg {
   }
   #home .landingPicture .landingInfo h3 {
     font-size: 3.4rem;
+    margin-bottom: 1.1rem;
+  }
+  #home .landingPicture .landingInfo h5 {
+    font-size: 1.4rem;
     margin-bottom: 1.8rem;
   }
   #home .landingPicture .landingInfo p {
@@ -409,6 +438,66 @@ svg {
 }
 #contact {
   background: #7a908d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0.6rem;
+}
+#contact h3 {
+  color: #43514f;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+#contact h5 {
+  color: #43514f;
+  font-weight: 500;
+  font-size: 1rem;
+}
+#contact h5.location {
+  margin-top: 1.1rem;
+}
+#contact form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact form input {
+  margin: 0.2rem;
+}
+#contact form input#userName, #contact form input#email, #contact form input#message {
+  width: 130%;
+  padding: 0.6rem;
+  border: 1px solid #43514f;
+  color: #dee3e3;
+}
+#contact form input#userName::-moz-placeholder, #contact form input#email::-moz-placeholder, #contact form input#message::-moz-placeholder {
+  color: #43514f;
+}
+#contact form input#userName:-ms-input-placeholder, #contact form input#email:-ms-input-placeholder, #contact form input#message:-ms-input-placeholder {
+  color: #43514f;
+}
+#contact form input#userName::placeholder, #contact form input#email::placeholder, #contact form input#message::placeholder {
+  color: #43514f;
+}
+#contact form input#message {
+  height: 7rem;
+}
+#contact form input#message::-moz-placeholder {
+  position: absolute;
+}
+#contact form input#message:-ms-input-placeholder {
+  position: absolute;
+}
+#contact form input#message::placeholder {
+  position: absolute;
+}
+#contact form input[type=submit] {
+  margin: 0.6rem 0 1rem;
+  padding: 0.6rem;
+  color: #dee3e3;
+  background: #43514f;
 }
 
 #aboutUs {
@@ -417,17 +506,17 @@ svg {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 2rem 0.6rem 0;
 }
 #aboutUs h3 {
   color: #43514f;
-  margin-top: 1.2rem;
   font-weight: 500;
+  margin-bottom: 1.2rem;
 }
 #aboutUs .aboutUsInfo {
   width: 85%;
   background: #b7c3c1;
   padding: 1rem;
-  margin-bottom: 1.2rem;
 }
 #aboutUs .aboutUsInfo P {
   color: #43514f;
@@ -479,7 +568,7 @@ svg {
 }
 .navbar .nav-center .links {
   flex-direction: column;
-  padding: 0 0.2rem;
+  padding: 0 0.5rem;
 }
 .navbar .nav-center .links li {
   margin: 1.8rem auto;
@@ -579,4 +668,4 @@ svg {
     top: 3%;
     left: 93%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
