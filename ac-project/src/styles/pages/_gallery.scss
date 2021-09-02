@@ -29,7 +29,6 @@
         }
     }
     .images{
-        width: 75%;
         @include flex-center;
         flex-wrap: wrap;
         img{
@@ -51,7 +50,7 @@
             }
         }
         .images{
-            width: 90%;
+            // width: 90%;
             img{
                 padding: .8rem;
                 margin-bottom: 0;
@@ -75,7 +74,7 @@
 @include desktop {
     #gallery{
         .images{
-            width: 90%;
+            // width: 90%;
             img{
                 width: 30%;
             }

@@ -580,7 +580,6 @@ footer {
   padding: 0.3rem 0.6rem;
 }
 #gallery .images {
-  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -598,9 +597,6 @@ footer {
     margin: 0.2rem 0.7rem;
     font-size: 0.9rem;
   }
-  #gallery .images {
-    width: 90%;
-  }
   #gallery .images img {
     padding: 0.8rem;
     margin-bottom: 0;
@@ -614,9 +610,6 @@ footer {
   }
 }
 @media only screen and (min-width: 1280px) {
-  #gallery .images {
-    width: 90%;
-  }
   #gallery .images img {
     width: 30%;
   }
@@ -780,4 +773,4 @@ footer {
   .navbar.show {
     max-width: 150px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
