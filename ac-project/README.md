@@ -41,3 +41,11 @@
 `AJ:`
 
 `David:` Absent
+
+
+#### 9/2:
+`Nysa:` Gallery content & styling
+
+`AJ:`
+
+`Daivd:` 

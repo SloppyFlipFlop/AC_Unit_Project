@@ -13,7 +13,7 @@
     }
     .buttons{
         @include flex-space;
-        margin-bottom: 0;
+        margin-bottom: .2rem;
         button{
             margin: .4rem .5rem;
             text-transform: uppercase;

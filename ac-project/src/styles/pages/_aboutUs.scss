@@ -14,10 +14,48 @@
     .aboutUsInfo{
         width: 85%;
         background: $primary-7;
-        padding: 1rem;
+        padding: 1.2rem;
         margin-bottom: 2rem;
         P{
             color: $primary-1;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// tablet
+@include tablet {
+    #aboutUs{
+        .aboutUsInfo{
+            width: 70%;
+            p{
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+// desktop
+@include large {
+    #aboutUs{
+        .aboutUsInfo{
+            p{
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+// desktop
+@include desktop {
+    #aboutUs{
+        .aboutUsInfo{
+            width: 55%;
+            p{
+                font-size: 1.4rem;
+            }
         }
     }
 }

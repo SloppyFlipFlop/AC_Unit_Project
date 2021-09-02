@@ -49,3 +49,24 @@
     }
   }
 }
+
+//tablet styles
+@include tablet{
+  #contact {
+
+  }
+}
+
+//large styles
+@include large{
+  #contact {
+    
+  }
+}
+
+//desktop styles
+@include desktop {
+  #contact {
+    
+  }
+}

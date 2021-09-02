@@ -23,7 +23,7 @@
   left: 0;
   .nav-center {
     background: $primary-1;
-    opacity: 85%;
+    opacity: 95%;
     flex-direction: column;
     height: 100vh;
     display: flex;
@@ -157,7 +157,7 @@
 @include large {
   .navbar {
     &.show {
-      max-width: 170px;
+      max-width: 160px;
     }
     .nav-center{
       .nav-header{
@@ -178,6 +178,14 @@
         width: 55px;
         height: 55px;
       }
+    }
+  }
+}
+
+@include desktop {
+  .navbar {
+    &.show {
+      max-width: 150px;
     }
   }
 }

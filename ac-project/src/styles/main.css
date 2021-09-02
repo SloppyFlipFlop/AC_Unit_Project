@@ -516,13 +516,37 @@ footer {
 #aboutUs .aboutUsInfo {
   width: 85%;
   background: #b7c3c1;
-  padding: 1rem;
+  padding: 1.2rem;
   margin-bottom: 2rem;
 }
 #aboutUs .aboutUsInfo P {
   color: #43514f;
 }
+#aboutUs .aboutUsInfo P:last-child {
+  margin-bottom: 0;
+}
 
+@media only screen and (min-width: 768px) {
+  #aboutUs .aboutUsInfo {
+    width: 70%;
+  }
+  #aboutUs .aboutUsInfo p {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #aboutUs .aboutUsInfo p {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #aboutUs .aboutUsInfo {
+    width: 55%;
+  }
+  #aboutUs .aboutUsInfo p {
+    font-size: 1.4rem;
+  }
+}
 #gallery {
   background: #7a908d;
   display: flex;
@@ -540,7 +564,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0;
+  margin-bottom: 0.2rem;
 }
 #gallery .buttons button {
   margin: 0.4rem 0.5rem;
@@ -617,7 +641,7 @@ footer {
 }
 .navbar .nav-center {
   background: #43514f;
-  opacity: 85%;
+  opacity: 95%;
   flex-direction: column;
   height: 100vh;
   display: flex;
@@ -735,7 +759,7 @@ footer {
 }
 @media only screen and (min-width: 1024px) {
   .navbar.show {
-    max-width: 170px;
+    max-width: 160px;
   }
   .navbar .nav-center .nav-header .logo {
     min-width: 140px;
@@ -750,5 +774,10 @@ footer {
   .navbar .nav-toggle svg {
     width: 55px;
     height: 55px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .navbar.show {
+    max-width: 150px;
   }
 }
