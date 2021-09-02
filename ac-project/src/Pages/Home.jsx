@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import rvimg from "../utils/images/rv-picture.jpg";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
           <p className="name">Clancy Briggs</p>
           <p className="address">24710 W Dove Trail, Buckeye, AZ 85326</p>
           <p className="number">+16234745069</p>
-          <button className="btn">Contact Us</button>
+          <a href="#contact" className="btn" >Contact Us</a>
         </div>
       </div>
     </main>

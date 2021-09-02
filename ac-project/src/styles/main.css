@@ -329,7 +329,7 @@ svg {
   background: #eee;
   opacity: 80%;
   position: absolute;
-  top: 45%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1rem 2rem;
@@ -356,24 +356,55 @@ svg {
   width: 60%;
   height: 100%;
   font-size: 0.7rem;
-  color: #9F3232;
-  border: #9F3232 solid 1px;
+  color: #9f3232;
+  border: #9f3232 solid 1px;
   border-radius: 0%;
 }
 
 @media only screen and (min-width: 768px) {
   #home .landingPicture .landingInfo {
     padding: 2.2rem 3rem;
-    width: 38%;
+    width: 40%;
   }
   #home .landingPicture .landingInfo h3 {
+    font-size: 2.3rem;
     margin-bottom: 1.8rem;
   }
   #home .landingPicture .landingInfo p {
     margin-bottom: 0.6rem;
+    font-size: 1rem;
   }
   #home .landingPicture .landingInfo p.number {
     margin-bottom: 1.8rem;
+  }
+  #home .landingPicture .landingInfo .btn {
+    font-size: 1.1rem;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #home .landingPicture .landingInfo {
+    padding: 2.2rem 3rem;
+    width: 40%;
+  }
+  #home .landingPicture .landingInfo h3 {
+    font-size: 3.4rem;
+    margin-bottom: 1.8rem;
+  }
+  #home .landingPicture .landingInfo p {
+    margin-bottom: 0.6rem;
+    font-size: 1.4rem;
+  }
+  #home .landingPicture .landingInfo p.number {
+    margin-bottom: 1.8rem;
+  }
+  #home .landingPicture .landingInfo .btn {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #home .landingPicture .landingInfo {
+    width: 30%;
   }
 }
 .navbar {
@@ -495,6 +526,9 @@ svg {
   .navbar .nav-center .links {
     margin-top: 30%;
   }
+  .navbar .nav-center .links li {
+    font-size: 1.2rem;
+  }
   .navbar .nav-toggle {
     top: 3%;
     left: 90%;
@@ -510,6 +544,9 @@ svg {
   }
   .navbar .nav-center .nav-header .logo {
     min-width: 140px;
+  }
+  .navbar .nav-center .links li {
+    font-size: 1.1rem;
   }
   .navbar .nav-toggle {
     top: 3%;

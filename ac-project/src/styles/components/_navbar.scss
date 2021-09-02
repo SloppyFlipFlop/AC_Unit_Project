@@ -135,6 +135,9 @@
       }
       .links{
         margin-top: 30%;
+        li{
+          font-size: 1.2rem;
+        }
       }
     }
     .nav-toggle{
@@ -157,6 +160,11 @@
       .nav-header{
         .logo{
           min-width: 140px;
+        }
+      }
+      .links{
+        li{
+          font-size: 1.1rem;
         }
       }
     }

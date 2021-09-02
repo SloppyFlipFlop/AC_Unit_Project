@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { FaBars, FaSleigh } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { links, socials } from "../utils/consts";
 
 import logo from "../utils/images/logo.svg";
@@ -37,7 +37,7 @@ const NavBar = () => {
                 const { url, id, text } = link;
                 return (
                   <li key={id}>
-                    {/* <Link to={url}>{text}</Link> */}
+                    
                     <a href={url}>{text}</a>
                   </li>
                 );

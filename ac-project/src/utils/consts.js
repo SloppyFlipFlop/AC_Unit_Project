@@ -1,7 +1,6 @@
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram} from "react-icons/fa";
 import React from "react";
-import { Home, Error} from "../Pages";
-import Admin from "../Pages/Admin"
+import { Home, AboutUs, Contact} from "../Pages";
 
 export const links = [
   
@@ -13,35 +12,22 @@ export const links = [
   },
   {
     id: 2,
-    url: "#about",
-    text: "About",
-    // page: <About />,
+    url: "#aboutUs",
+    text: "About Us",
+    page: <AboutUs />,
   },
   {
     id: 3,
     url: "#contact",
     text: "Contact",
-    // page: <About />,
+    page: <Contact />,
   },
-  {
-    id: 4,
-    url: "#gallery",
-    text: "gallery",
-    // page: <About />,
-  },
-  {
-    id: 5,
-    url: "/admin",
-    text: "Admin",
-    page: <Admin />,
-  },
-  
-  {
-    id: 6,
-    url: "*",
-    text: "Error",
-    page: <Error />,
-  },
+  // {
+  //   id: 4,
+  //   url: "#gallery",
+  //   text: "gallery",
+  //   // page: <About />,
+  // }
 ];
 
 export const socials = [
@@ -62,7 +48,7 @@ export const socials = [
   },
   {
     id: 4,
-    url: "https://www.behance.com",
+    url: "https://www.instagram.com",
     icon: <FaInstagram />
   },
 ];
