@@ -22,6 +22,7 @@ function App() {
             );
           })}
       </Switch>
+      
       <Home />
       <AboutUs />
       <Contact/>

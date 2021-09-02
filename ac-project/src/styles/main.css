@@ -407,6 +407,32 @@ svg {
     width: 30%;
   }
 }
+#contact {
+  background: #7a908d;
+}
+
+#aboutUs {
+  background: #7a908d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#aboutUs h3 {
+  color: #43514f;
+  margin-top: 1.2rem;
+  font-weight: 500;
+}
+#aboutUs .aboutUsInfo {
+  width: 85%;
+  background: #b7c3c1;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+#aboutUs .aboutUsInfo P {
+  color: #43514f;
+}
+
 .navbar {
   color: #7a908d;
   transition: all 0.5s linear;
@@ -453,6 +479,7 @@ svg {
 }
 .navbar .nav-center .links {
   flex-direction: column;
+  padding: 0 0.2rem;
 }
 .navbar .nav-center .links li {
   margin: 1.8rem auto;
