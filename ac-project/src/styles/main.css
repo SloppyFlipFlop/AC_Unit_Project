@@ -794,4 +794,8 @@ footer {
   .navbar.show {
     max-width: 150px;
   }
+  .navbar .nav-toggle {
+    top: 2%;
+    left: 95%;
+  }
 }/*# sourceMappingURL=main.css.map */
