@@ -2,7 +2,6 @@
 
 *In this project you used React, SCSS, and Router to make a website for a AC repair and RV inspection company*
 
-
 ## Daily Log:
 
 #### 8/26:

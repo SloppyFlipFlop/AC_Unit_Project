@@ -479,15 +479,16 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 65%;
 }
 #contact form input {
   margin: 0.2rem;
 }
 #contact form input#userName, #contact form input#email, #contact form input#message {
-  width: 130%;
+  width: 100%;
   padding: 0.6rem;
   border: 1px solid #43514f;
-  color: #dee3e3;
+  color: #43514f;
 }
 #contact form input#userName::-moz-placeholder, #contact form input#email::-moz-placeholder, #contact form input#message::-moz-placeholder {
   color: #43514f;
@@ -500,15 +501,7 @@ footer {
 }
 #contact form input#message {
   height: 7rem;
-}
-#contact form input#message::-moz-placeholder {
-  position: absolute;
-}
-#contact form input#message:-ms-input-placeholder {
-  position: absolute;
-}
-#contact form input#message::placeholder {
-  position: absolute;
+  padding-bottom: 5.5rem;
 }
 #contact form input[type=submit] {
   margin: 0.6rem 0 1rem;
@@ -517,6 +510,34 @@ footer {
   background: #43514f;
 }
 
+@media only screen and (min-width: 768px) {
+  #contact form {
+    width: 65%;
+  }
+  #contact form input {
+    margin: 0.2rem;
+  }
+  #contact form input#message {
+    height: 8rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #contact form {
+    width: 70%;
+  }
+  #contact form input#userName, #contact form input#email {
+    height: 3.5rem;
+  }
+  #contact form input#message {
+    height: 12rem;
+    padding-bottom: 9rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  #contact form {
+    width: 55%;
+  }
+}
 #aboutUs {
   background: #7a908d;
   display: flex;
@@ -784,8 +805,8 @@ footer {
     left: 92.5%;
   }
   .navbar .nav-toggle svg {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   .container {
@@ -807,12 +828,16 @@ footer {
     left: 92%;
   }
   .navbar .nav-toggle svg {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .navbar.show {
     max-width: 150px;
+  }
+  .navbar .nav-toggle {
+    top: 2%;
+    left: 95%;
   }
 }/*# sourceMappingURL=main.css.map */
