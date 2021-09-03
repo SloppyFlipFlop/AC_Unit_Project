@@ -5,16 +5,15 @@
 #aboutUs {
   background: $primary-4;
   @include flex-center-column;
-  padding: 2rem 0.6rem 0;
+  padding: 2rem 0.6rem;
   h3 {
     color: $primary-1;
     font-weight: 500;
     margin-bottom: 1.2rem;
     margin-bottom: 0;
-    
   }
   .underline {
-      margin-top: 5px;
+    margin-top: 5px;
     width: 100px;
     background: $primary-3;
     border-radius: 1rem;
@@ -23,31 +22,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     .innerUnderLine {
-        
-        background: $primary-7;
-        height: 5px;
-        width: 53px;
-        border-radius: 1rem;
+      background: $primary-7;
+      height: 5px;
+      width: 53px;
+      border-radius: 1rem;
     }
   }
   .aboutUsInfo {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
     background: $primary-7;
     width: 100vw;
-   
+
     padding: 10px;
     img {
-        border-radius: 10px;
+      border-radius: 10px;
+      margin: 1rem 0;
     }
-    P {
-        text-align: center;
+    p{
+      text-align: center;
       color: $primary-1;
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
   }
 }
@@ -56,7 +52,11 @@
 @include tablet {
   #aboutUs {
     .aboutUsInfo {
-      width: 70%;
+      @include flex-center-column;
+      width: 80%;
+      img {
+        width: 60%;
+      }
       p {
         font-size: 1.1rem;
       }
@@ -68,6 +68,7 @@
 @include large {
   #aboutUs {
     .aboutUsInfo {
+      @include flex-center;
       p {
         font-size: 1.6rem;
       }
@@ -79,9 +80,14 @@
 @include desktop {
   #aboutUs {
     .aboutUsInfo {
-      width: 55%;
+      // @include flex-center;
+      // flex-direction: row;
+      width: 80%;
       p {
         font-size: 1.4rem;
+      }
+      img{
+        width: 30%;
       }
     }
   }

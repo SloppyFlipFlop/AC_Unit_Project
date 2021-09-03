@@ -3,7 +3,7 @@
 @use '../util/mixins'as *;
 
 #contact {
-  background: $primary-8;
+  background: $primary-4;
   @include flex-center-column;
   padding: 2rem 0.6rem;
   .underline {
@@ -48,6 +48,7 @@
       &#email,
       &#message {
         width: 100%;
+        border-radius: 5px;
         padding: 0.6rem;
         border: 1px solid $primary-1;
         color: $primary-1;
@@ -61,6 +62,7 @@
       }
     }
     input[type="submit"] {
+      border-radius: 5px;
       margin: 0.6rem 0 1rem;
       padding: 0.6rem;
       color: $primary-8;

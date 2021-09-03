@@ -3,7 +3,7 @@
 @use '../util/mixins'as *;
 
 #gallery {
-  background: $primary-4;
+  background: $primary-8;
   @include flex-center-column;
   padding: 2rem 0.6rem;
   h3 {

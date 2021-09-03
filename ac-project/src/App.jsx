@@ -25,8 +25,8 @@ function App() {
       
       <Home />
       <AboutUs />
-      <Contact/>
       <Gallery />
+      <Contact/>
 
       <footer>
       COPYRIGHT © 2021 BRIGGS - ALL RIGHTS RESERVED.
