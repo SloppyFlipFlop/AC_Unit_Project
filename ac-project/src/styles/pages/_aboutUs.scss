@@ -2,60 +2,87 @@
 @use '../util/variables'as *;
 @use '../util/mixins'as *;
 
-#aboutUs{
-    background: $primary-4;
-    @include flex-center-column;
-    padding: 2rem .6rem 0;
-    h3{
-        color: $primary-1;
-        font-weight: 500;
-        margin-bottom: 1.2rem;
-    }
-    .aboutUsInfo{
-        width: 85%;
+#aboutUs {
+  background: $primary-4;
+  @include flex-center-column;
+  padding: 2rem 0.6rem 0;
+  h3 {
+    color: $primary-1;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    margin-bottom: 0;
+    
+  }
+  .underline {
+      margin-top: 5px;
+    width: 100px;
+    background: $primary-3;
+    border-radius: 1rem;
+    height: 5px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .innerUnderLine {
+        
         background: $primary-7;
-        padding: 1.2rem;
-        margin-bottom: 2rem;
-        P{
-            color: $primary-1;
-            &:last-child{
-                margin-bottom: 0;
-            }
-        }
+        height: 5px;
+        width: 53px;
+        border-radius: 1rem;
     }
+  }
+  .aboutUsInfo {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: $primary-7;
+    width: 100vw;
+   
+    padding: 10px;
+    img {
+        border-radius: 10px;
+    }
+    P {
+        text-align: center;
+      color: $primary-1;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 // tablet
 @include tablet {
-    #aboutUs{
-        .aboutUsInfo{
-            width: 70%;
-            p{
-                font-size: 1.1rem;
-            }
-        }
+  #aboutUs {
+    .aboutUsInfo {
+      width: 70%;
+      p {
+        font-size: 1.1rem;
+      }
     }
+  }
 }
 
 // desktop
 @include large {
-    #aboutUs{
-        .aboutUsInfo{
-            p{
-                font-size: 1.6rem;
-            }
-        }
+  #aboutUs {
+    .aboutUsInfo {
+      p {
+        font-size: 1.6rem;
+      }
     }
+  }
 }
 
 // desktop
 @include desktop {
-    #aboutUs{
-        .aboutUsInfo{
-            width: 55%;
-            p{
-                font-size: 1.4rem;
-            }
-        }
+  #aboutUs {
+    .aboutUsInfo {
+      width: 55%;
+      p {
+        font-size: 1.4rem;
+      }
     }
+  }
 }

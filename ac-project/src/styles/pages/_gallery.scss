@@ -2,82 +2,91 @@
 @use '../util/variables'as *;
 @use '../util/mixins'as *;
 
-#gallery{
-    background: $primary-4;
-    @include flex-center-column;
-    padding: 2rem 0.6rem;
-    h3 {
-        color: $primary-1;
-        font-weight: 500;
-        margin-bottom: 1.2rem;
+#gallery {
+  background: $primary-4;
+  @include flex-center-column;
+  padding: 2rem 0.6rem;
+  h3 {
+    color: $primary-1;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+  .buttons {
+    @include flex-space;
+    margin-bottom: 0.2rem;
+    
+    button {
+      margin: 0.4rem 0.5rem;
+      text-transform: uppercase;
+      padding: 0.3rem;
+      width: auto;
+      font-size: 0.6rem;
+      color: $primary-4;
+      background: $primary-1;
+      // border-radius: 0%;
+&:nth-child(2),
+    &:nth-child(3) {
+      border-radius: 12px;
     }
-    .buttons{
-        @include flex-space;
-        margin-bottom: .2rem;
-        button{
-            margin: .4rem .5rem;
-            text-transform: uppercase;
-            padding: .3rem;
-            width: auto;
-            font-size: 0.6rem;
-            color: $primary-4;
-            background: $primary-1;
-            border-radius: 0%;
-            &#button-all, &#button-none{
-                padding: .3rem .6rem;
-            }
-        }
+    &#button-none {
+        border-radius: 12px;
     }
-    .images{
-        @include flex-center;
-        flex-wrap: wrap;
-        img{
-            margin-bottom: .3rem;
-            // width: 70%;
-            &:last-child{
-                margin-bottom: 0;
-            }
-        }
+      &#button-all,
+      &#button-none {
+        padding: 0.3rem 0.6rem;
+      }
     }
+  }
+  .images {
+    @include flex-center;
+    flex-wrap: wrap;
+    img {
+      margin-bottom: 0.3rem;
+      // width: 70%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 @include tablet {
-    #gallery{
-        .buttons{
-            button{
-                margin: .2rem .7rem;
-                font-size: .9rem;
-            }
-        }
-        .images{
-            // width: 90%;
-            img{
-                padding: .8rem;
-                margin-bottom: 0;
-                width: 42%;
-            }
-        }
+  #gallery {
+    .buttons {
+      &:nth-child(2),
+      &:nth-child(3) {
+        border-radius: 12px;
+      }
     }
+    .images {
+      // width: 90%;
+      img {
+        padding: 0.8rem;
+        margin-bottom: 0;
+        width: 42%;
+      }
+    }
+  }
 }
 
 @include large {
-    #gallery{
-        .buttons{
-            button{
-                margin: .2rem .9rem;
-                font-size: 1.1rem;
-            }
-        }
+  #gallery {
+    .buttons {
+      button {
+        margin: 0.2rem 0.9rem;
+        font-size: 1.1rem;
+      }
     }
+  }
 }
 
 @include desktop {
-    #gallery{
-        .images{
-            // width: 90%;
-            img{
-                width: 30%;
-            }
-        }
+  #gallery {
+    .images {
+      // width: 90%;
+      img {
+        width: 30%;
+      }
     }
+  }
 }

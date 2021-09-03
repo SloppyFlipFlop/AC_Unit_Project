@@ -6,10 +6,30 @@
   background: $primary-8;
   @include flex-center-column;
   padding: 2rem 0.6rem;
+  .underline {
+    margin-top: 5px;
+  width: 100px;
+  background: $primary-3;
+  border-radius: 1rem;
+  height: 5px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .innerUnderLine {
+      
+      background: $primary-7;
+      height: 5px;
+      width: 53px;
+      border-radius: 1rem;
+      // border-left: 1px solid $primary-3;
+  }
+}
   h3 {
     color: $primary-1;
     font-weight: 500;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0;
   }
   h5{
     color: $primary-1;
@@ -48,6 +68,7 @@
         background: $primary-1;
     }
   }
+  
 }
 
 //tablet styles

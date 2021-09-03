@@ -3,10 +3,25 @@ const Contact = () => {
   return (
     <div id="contact">
       <h3>Contact Us!</h3>
+      <div className="underline">
+        <div className="innerUnderLine"></div>
+      </div>
       <form>
         <input type="text" id="userName" name="userName" placeholder="Name" />
-        <input type="text" id="email" name="email" placeholder="Email" required />
-        <input type="text" id="message" name="message" placeholder="Message" required />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="text"
+          id="message"
+          name="message"
+          placeholder="Message"
+          required
+        />
         <input type="submit" value="Submit" />
       </form>
       <h5>Or Call</h5>

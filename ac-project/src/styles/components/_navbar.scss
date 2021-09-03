@@ -4,7 +4,7 @@
 
 // Styles for NavBar ... for phone
 .navbar {
-  color: $primary-4;
+  background: $primary-4;
   transition: $transition;
   overflow: hidden;
   &.show {
@@ -45,7 +45,7 @@
     .links-container {
       display: flex;
       flex-direction: column;
-      
+      // transform: $transition;
     }
 
     .links {
@@ -56,12 +56,12 @@
         text-align: center;
 
         text-transform: capitalize;
-        letter-spacing: 0.1rem;
+        // letter-spacing: 0.1rem;
         display: block;
         width: fit-content;
 
         transition: all 0.5s linear;
-        position: relative;
+        // position: relative;
         a {
           color: $primary-8;
           // font-weight: bold;

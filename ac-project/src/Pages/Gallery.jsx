@@ -11,11 +11,11 @@ const Gallery = () => {
     const [button1Show, setButton1Show] = useState(true);
     const [button2Show, setButton2Show] = useState(true);
     let showHide = (id) => {
-        if(id === "button1"){
+        if(id === "ACPhotos"){
             setButton1Show(true);
             setButton2Show(false);
         }
-        if(id === "button2"){
+        if(id === "RVPhotos"){
             setButton2Show(true);
             setButton1Show(false);
         }
@@ -33,8 +33,8 @@ const Gallery = () => {
             <h3>Gallery</h3>
             <div className="buttons">
                 <button className="btn" id="button-all" onClick={() => showHide("all")}>All</button>
-                <button className="btn" id="button1" onClick={() => showHide("button1")}>Button 1</button>
-                <button className="btn" id="button2" onClick={() => showHide("button2")}>Button 2</button>
+                <button className="btn" id="ACPhotos" onClick={() => showHide("ACPhotos")}>AC Photos</button>
+                <button className="btn" id="RVPhotos" onClick={() => showHide("RVPhotos")}>RV Photos</button>
                 <button className="btn" id="button-none" onClick={() => showHide("none")}>None</button>
             </div>
             <div className="images">
