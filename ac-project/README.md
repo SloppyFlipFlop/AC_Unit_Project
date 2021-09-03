@@ -43,7 +43,7 @@
 
 
 #### 9/2:
-`Nysa:` Gallery content & styling
+`Nysa:` Gallery content & styling, About Us tablet & desktop styles
 
 `AJ:`
 
