@@ -11,62 +11,82 @@
     font-weight: 500;
     margin-bottom: 1.2rem;
   }
-  h5{
+  h5 {
     color: $primary-1;
     font-weight: 500;
     font-size: 1rem;
-    &.location{
-        margin-top: 1.1rem;
+    &.location {
+      margin-top: 1.1rem;
     }
   }
   form {
     @include flex-center-column;
+    width: 65%;
     input {
       margin: 0.2rem;
       &#userName,
       &#email,
       &#message {
-        width: 130%;
+        width: 100%;
         padding: 0.6rem;
         border: 1px solid $primary-1;
-        color: $primary-9;
+        color: $primary-1;
         &::placeholder {
           color: $primary-1;
         }
       }
-      &#message{
+      &#message {
         height: 7rem;
-        &::placeholder{
-            position: absolute;
-        }
+        padding-bottom: 5.5rem;
       }
     }
-    input[type=submit] {
-        margin: .6rem 0 1rem;
-        padding: .6rem;
-        color: $primary-8;
-        background: $primary-1;
+    input[type="submit"] {
+      margin: 0.6rem 0 1rem;
+      padding: 0.6rem;
+      color: $primary-8;
+      background: $primary-1;
     }
   }
 }
-
 //tablet styles
-@include tablet{
+@include tablet {
   #contact {
-
+    form {
+      width: 65%;
+      input {
+        margin: 0.2rem;
+        &#message {
+          height: 8rem;
+        }
+      }
+    }
   }
 }
 
 //large styles
-@include large{
+@include large {
   #contact {
-    
+    form {
+      width: 70%;
+      input {
+        &#userName,
+        &#email {
+          height: 3.5rem;
+        }
+        &#message {
+          height: 12rem;
+          padding-bottom: 9rem;
+        }
+      }
+    }
   }
 }
 
 //desktop styles
 @include desktop {
   #contact {
-    
+    form {
+      width: 55%;
+    }
   }
 }
