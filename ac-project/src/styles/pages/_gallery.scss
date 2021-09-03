@@ -14,7 +14,7 @@
   .buttons {
     @include flex-space;
     margin-bottom: 0.2rem;
-    
+
     button {
       margin: 0.4rem 0.5rem;
       text-transform: uppercase;
@@ -23,14 +23,9 @@
       font-size: 0.6rem;
       color: $primary-4;
       background: $primary-1;
-      // border-radius: 0%;
-&:nth-child(2),
-    &:nth-child(3) {
-      border-radius: 12px;
-    }
-    &#button-none {
-        border-radius: 12px;
-    }
+      &#button-all, &#button-none, &#ACPhotos, &#RVPhotos{
+        border-radius: 5px;
+      }
       &#button-all,
       &#button-none {
         padding: 0.3rem 0.6rem;

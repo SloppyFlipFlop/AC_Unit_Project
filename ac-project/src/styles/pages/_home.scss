@@ -14,13 +14,6 @@
     img {
       width: 100vw;
       height: 100vh;
-      // @include cover-background;
-
-      background: url(../utils/images/rv-image.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
     }
 
     .landingInfo {
@@ -73,8 +66,17 @@
 
 @include tablet {
   #home {
+    background: $primary-8;
+    .landingPicture{
+      img{
+        display: hidden;
+        width: 0;
+        height: 0;
+      }
+    }
     .landingPicture {
       .landingInfo {
+        background: $primary-4;
         padding: 2.2rem 3rem;
         width: 40%;
         h3 {
